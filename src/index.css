@@ -1,0 +1,38 @@
+body { font-family: Arial; background:#0f172a; color:white; }
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  gap:20px;
+}
+.card {
+  background:#111827;
+  padding:10px;
+  border-radius:12px;
+}
+.card img { width:100%; border-radius:8px; }
+
+/* Skeleton */
+.skeleton-card {
+  background:#1f2937;
+  padding:10px;
+  border-radius:12px;
+}
+.skeleton-img {
+  height:120px;
+  background:#374151;
+  border-radius:8px;
+  animation:pulse 1.5s infinite;
+}
+.skeleton-text {
+  height:15px;
+  background:#374151;
+  margin-top:10px;
+  animation:pulse 1.5s infinite;
+}
+.skeleton-text.small { width:50%; }
+
+@keyframes pulse {
+  0% { opacity:0.5; }
+  50% { opacity:1; }
+  100% { opacity:0.5; }
+}
